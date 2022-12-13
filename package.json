@@ -4,6 +4,7 @@
   "description": "convert svg to fonts",
   "main": "src/index.js",
   "scripts": {
+    "local": "vite",
     "start": "node src/index.js",
     "svg:optmize": "svgo -f ./src/svg -o ./src/svg",
     "svg:to-path": "svgtofont --sources ./src/svg --output ./src/font --fontName bicons",
