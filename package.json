@@ -1,14 +1,28 @@
 {
-  "name": "bee-fonts",
+  "name": "bicons",
   "version": "1.0.0",
   "description": "convert svg to fonts",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "exit 0"
+    "start": "node src/index.js",
+    "svg:optmize": "svgo -f ./src/svg -o ./src/svg",
+    "svg:to-path": "svgtofont --sources ./src/svg --output ./src/font --fontName bicons",
+    "test": "test"
+  },
+  "svgtofont":{
+    "fontName": "bicons",
+    "website": false,
+    "outSVGReact": false,
+    "css":{
+      "include": "\\.(css)$",
+      "output": "./src",
+      "fileName": "bicons",
+      "cssPath": "./fonts/"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dhirajpatel/bee-fonts.git"
+    "url": "git+https://github.com/Dhirajpatel/bicons.git"
   },
   "keywords": [
     "svg",
@@ -18,7 +32,11 @@
   "author": "Dhirajpatel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dhirajpatel/bee-fonts/issues"
+    "url": "https://github.com/Dhirajpatel/bicons/issues"
   },
-  "homepage": "https://github.com/Dhirajpatel/bee-fonts#readme"
+  "homepage": "https://github.com/Dhirajpatel/bicons#readme",
+  "dependencies": {
+    "svgo": "^3.0.2",
+    "svgtofont": "^3.22.0"
+  }
 }
