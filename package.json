@@ -1,0 +1,24 @@
+{
+  "name": "bee-fonts",
+  "version": "1.0.0",
+  "description": "convert svg to fonts",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhirajpatel/bee-fonts.git"
+  },
+  "keywords": [
+    "svg",
+    "to",
+    "fonts"
+  ],
+  "author": "Dhirajpatel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhirajpatel/bee-fonts/issues"
+  },
+  "homepage": "https://github.com/Dhirajpatel/bee-fonts#readme"
+}
