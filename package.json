@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "description": "convert svg to fonts",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "local": "vite",
+    "prepare": "npm run build",
     "start": "node src/index.js",
     "svg:optmize": "svgo -f ./src/svg -o ./src/svg",
-    "svg:to-path": "svgtofont --sources ./src/svg --output ./src/font --fontName bicons",
-    "test": "test"
+    "svg:to-font": "svgtofont --sources ./src/svg --output ./src/fonts --fontName bicons",
+    "svg:all": "npm run svg:optmize && npm run svg:to-font"
   },
-  "svgtofont":{
+  "svgtofont": {
     "fontName": "bicons",
     "website": false,
     "outSVGReact": false,
-    "css":{
+    "css": {
       "include": "\\.(css)$",
       "output": "./src",
       "fileName": "bicons",
@@ -37,6 +38,7 @@
   },
   "homepage": "https://github.com/Dhirajpatel/bicons#readme",
   "dependencies": {
+    "cwco": "^1.7.8",
     "svgo": "^3.0.2",
     "svgtofont": "^3.22.0"
   }

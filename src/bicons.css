@@ -1,11 +1,11 @@
 @font-face {
   font-family: "bicons";
-  src: url('./fonts/bicons.eot?t=1670924186273'); /* IE9*/
-  src: url('./fonts/bicons.eot?t=1670924186273#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("./fonts/bicons.woff2?t=1670924186273") format("woff2"),
-  url("./fonts/bicons.woff?t=1670924186273") format("woff"),
-  url('./fonts/bicons.ttf?t=1670924186273') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('./fonts/bicons.svg?t=1670924186273#bicons') format('svg'); /* iOS 4.1- */
+  src: url('./fonts/bicons.eot?t=1671000479705'); /* IE9*/
+  src: url('./fonts/bicons.eot?t=1671000479705#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("./fonts/bicons.woff2?t=1671000479705") format("woff2"),
+  url("./fonts/bicons.woff?t=1671000479705") format("woff"),
+  url('./fonts/bicons.ttf?t=1671000479705') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./fonts/bicons.svg?t=1671000479705#bicons') format('svg'); /* iOS 4.1- */
 }
 
 [class^="bicons-"], [class*=" bicons-"] {
