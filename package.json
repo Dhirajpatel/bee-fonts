@@ -5,10 +5,11 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "prepare": "npm run build",
+    "build": "tsc",
+    "prepare": "npm run start",
     "start": "node src/index.js",
     "svg:optmize": "svgo -f ./src/svg -o ./src/svg",
-    "svg:to-font": "svgtofont --sources ./src/svg --output ./src/fonts --fontName bicons",
+    "svg:to-font": "svgtofont --sources ./src/svg --output ./dist/fonts --fontName bicons",
     "svg:all": "npm run svg:optmize && npm run svg:to-font"
   },
   "svgtofont": {
@@ -17,7 +18,7 @@
     "outSVGReact": false,
     "css": {
       "include": "\\.(css)$",
-      "output": "./src",
+      "output": "./dist",
       "fileName": "bicons",
       "cssPath": "./fonts/"
     }
@@ -40,6 +41,10 @@
   "dependencies": {
     "cwco": "^1.7.8",
     "svgo": "^3.0.2",
-    "svgtofont": "^3.22.0"
-  }
+    "svgtofont": "^3.22.0",
+    "typescript": "^4.9.4"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
