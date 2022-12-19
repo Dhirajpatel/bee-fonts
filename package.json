@@ -1,26 +1,27 @@
 {
-  "name": "bicons",
+  "name": "@dhirajpatel/bicons",
   "version": "1.0.0",
   "description": "convert svg to fonts",
-  "main": "src/index.js",
+  "main": "dist/bicons.css",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run start",
-    "start": "node src/index.js",
+    "start": "node dist/bicons.css",
     "svg:optmize": "svgo -f ./src/svg -o ./src/svg",
-    "svg:to-font": "svgtofont --sources ./src/svg --output ./dist/fonts --fontName bicons",
+    "svg:to-font": "svgtofont --sources ./src/svg --output ./dist/fonts --fontName bi",
     "svg:all": "npm run svg:optmize && npm run svg:to-font"
   },
   "svgtofont": {
-    "fontName": "bicons",
+    "fontName": "bi",
     "website": false,
     "outSVGReact": false,
     "css": {
       "include": "\\.(css)$",
       "output": "./dist",
       "fileName": "bicons",
-      "cssPath": "./fonts/"
+      "cssPath": "./fonts/",
+      "fontSize": "2em"
     }
   },
   "repository": {
@@ -33,7 +34,7 @@
     "fonts"
   ],
   "author": "Dhirajpatel",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Dhirajpatel/bicons/issues"
   },
