@@ -2,12 +2,12 @@
   "name": "@dhirajpatel/bicons",
   "version": "1.0.0",
   "description": "convert svg to fonts",
-  "main": "dist/bicons.css",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run start",
-    "start": "node dist/bicons.css",
+    "start": "node src/index.js",
     "svg:optmize": "svgo -f ./src/svg -o ./src/svg",
     "svg:to-font": "svgtofont --sources ./src/svg --output ./dist/fonts --fontName bi",
     "svg:all": "npm run svg:optmize && npm run svg:to-font"
