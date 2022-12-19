@@ -1,6 +1,6 @@
 {
   "name": "@dhirajpatel/bicons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert svg to fonts",
   "main": "src/index.js",
   "type": "module",
